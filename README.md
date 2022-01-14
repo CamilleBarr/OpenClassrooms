@@ -1,10 +1,5 @@
 - 👋 Hi, I’m @KKBARR
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-
-<!---
-KKBARR/KKBARR is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+- 👀 I’m interested in sociology, IT, science, human ressources, geopolitics
+- 🌱 I’m currently learning HTML/CSS/JAVASCRIPTS/NODE/SQL and more
+- 💞️ I’m looking to collaborate on all kind of projects of all kind of language
+- 📫 How to reach me : send me an @mail
