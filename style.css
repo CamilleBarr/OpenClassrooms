@@ -3,10 +3,16 @@
 @media screen and(min-width: 992px){
 
 }
+
 /*ci_dessus correspond à tous les écrans à partir du minimum d'affichage 992px*/
 @media screen and (max-width: 768px){
+
+    body{
+        width:90%;
+    }
+
     .footer{
-        width: auto;
+        width: 90%;
         background-color: #f2f2f2;    
         display: flex;
         flex-direction: column;
@@ -15,19 +21,39 @@
         padding: 5px;
     }
     .hebergements{
-        
         width: 100%;
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column-reverse;
      
     }
+ 
     .heb_marseille{
+        width: 60%;
         background-color: #ffffff;
+
+    }.heb_populaire{
+        width: 30%;
+
     }
 
-    .heb_marseille, .heb_populaire{
-        padding-bottom: 20px;
+    .h_all_card, .hp_all_card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .hp_card{
+        display: flex;
+        background-color: #ffffff;
+        border-radius: 20px;
+        border: solid 5px #ffffff;
+    }
+
+    .hp_card_name{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
         
     }
 } 
@@ -35,8 +61,7 @@
 
 
 body{
-    width: 95%;
-    margin: 40px;
+    margin: 3%;
     font-family: 'Raleway', sans-serif;
 
 
@@ -92,7 +117,11 @@ body{
     margin: 20px;
 }
 
-
+.form{
+display: inline-block;
+justify-content: flex-start;
+white-space:0%;
+}
 
 .fa-map-marker-alt{
    
@@ -100,23 +129,31 @@ body{
     border-bottom-left-radius: 15px;
     border-color: #f2f2f2;
     background-color: #f2f2f2;
-    padding: 15px;
+    padding: 20px;
+    margin-right: -2px;
+    size: 40%;
 }
 .search{
     background-color: #ffffff;
-    padding: 15px;
-    border: none;
-    display: none;
+    padding: 20px;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    border-right: none;
+    border-left: none;
+    margin: 0px;
+    font-weight: bold;
+
 
 }
 
 .rechercher{
     color: #ffffff;
     background-color: #0065FC;
+    border-color: #0065FC;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    border-color: #0065FC;
-    padding: 15px;
+    margin-left: -2px;
+    letter-spacing: 5%;
 
 }
 
@@ -209,75 +246,114 @@ body{
 
 .hebergements{
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
 
 .heb_marseille{
-    width: 60%;
+    max-width: 60%;
     background-color: #f2f2f2;
     border-radius: 15px;
-    padding-top: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-}
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 
-.afficher_plus{
-    text-decoration: none;
-    color: initial;
 }
 
 .heb_populaire{
-    width: 30%;
-    margin-left: 40px;
+    max-width: 30%;
     background-color: #f2f2f2;
     border-radius: 15px;
-    padding-top: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 20px;
 
+}
+.h_plus{
+    position: relative;    
+    padding-left: 40px;
+    justify-content: flex-end;
+    color: inherit;
+    text-decoration: none;
+}
+.h_title{
+    position: relative;
+    padding-left: 40px;
 }
 
 .fa-chart-line{
-    margin-left: 100px;
+    margin-left: 20%;
 }
 
 .h_all_card{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.h_card{
-    background-color: #ffffff;
-    border-radius: 20px;
-    border: solid 5px #ffffff;
-    margin-top: 5px;
-    margin-bottom: 5%;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .hp_all_card{
-    display: flex;
-    justify-content: start;
+    width: 100%;
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-around;
+    
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.hp_card{
+.h_afficher_plus{
     display: flex;
-    width: 100%;
-
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align: left;
-
+    flex-wrap: wrap;
+    flex-basis: auto;
+    flex-direction: column;
+    text-decoration: none;
+    color: initial;
+    justify-content: space-between;
     background-color: #ffffff;
     border-radius: 20px;
     border: solid 5px #ffffff;
-    margin-top: 5px;
-    margin-bottom: 5%;
+    margin: 10px;
+}
+
+.hp_afficher_plus{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    text-decoration: none;
+    color: inherit;
+    justify-content: flex-start;  
+    align-content: flex-start;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: solid 5px #ffffff;
+    margin:10px;
+    
+}
+
+.h_card_name{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.hp_card_name{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 25px;
 }
 
 .h_img{
+    position: relative;
     width: 250px; 
     height: 120px; 
     object-fit: cover; 
@@ -286,18 +362,35 @@ body{
 }
 
 .hp_img{
-    width: 130px; 
+    position: relative;
+    flex-grow: inherit;
+    flex-shrink: inherit;
+    width: 140px; 
     height: 150px; 
     object-fit: cover; 
     border-top-left-radius: 17px;
     border-bottom-left-radius: 17px;
 }
 
-.hp_card_name{
+
+
+.title_card_name{
+    width: 80% ;
+    padding-bottom: 0px;
+}
+
+.h_subtitle{
     display: inline-block;
-    text-align: left;
-    text-overflow: auto;
-    padding: 15px;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    padding-top: 0px;
+}
+
+.hp_subtitle{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
 }
 
 .euro_sign{
@@ -306,10 +399,15 @@ body{
 
 .fa-star{
     color: #0065FC;
-    
+    size: 5; 
 }
 
 .activites{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
 }
 
 .all_figure{

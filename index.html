@@ -38,8 +38,8 @@
                     <form method="post" action="traitement.php" class="form">
                     <p>
                         <span class="fas fa-map-marker-alt"></span>
-                        <input class="search" type="search" placeholder="ex: Marseille, France"  size="30" maxlength="200"/> 
-                        <button class="rechercher">Rechercher</button>
+                        <input class="search" type="search" name="city" placeholder="ex: Marseille, France"  size="30" maxlength="200"/> 
+                        <button class="rechercher"><h3>Rechercher</h3></button>
                     </p>
                     </form>
             </div>
@@ -73,112 +73,125 @@
         <section class="hebergements" id="hebergements">
            
             <article class="heb_marseille">
-                <h2>Hébergements à Marseille</h2>
+
+                <h2 class="h_title">Hébergements à Marseille</h2><br/>
+
                 <div class="h_all_card">
 
                     <div class="h_card" >
-                        <a href="#" class="afficher_plus">
+                        <a href="#" class="h_afficher_plus">
                             <img class="h_img" src="images/hebergements/4_small/h_la_cannebiere.jpg" alt="h_la_cannebiere"/>
                             <div class="h_card_name">
-                                <h4>Auberge La Cannebière </h4>
-                                <p class="subtitle">Nuit à partir de 25<span class="euro_sign">€</span><p>
-                                <span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="far fa-star"></span>
+                                <h4 class="h_title_card_name">Auberge La Cannebière</h4>
+                                <p class="h_subtitle">Nuit à partir de 25<span class="euro_sign">€</span><br/>
+                                <span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star" style="color:#f2f2f2"></span>
+                                </p>
                             </div>
                         </a>
                     </div>
 
                     <div class="h_card" >
-                        <a href="#"class="afficher_plus">
-                             <img class="h_img" src="images/hebergements/4_small/h_hotel_du_port.jpg" alt="h_hotel_du_port"/>
+                        <a href="#"class="h_afficher_plus">
+                            <img class="h_img" src="images/hebergements/4_small/h_hotel_du_port.jpg" alt="h_hotel_du_port"/>
                             <div class="h_card_name">
-                                <h4>Hôtel du port </h4>
-                                <p class="subtitle">Nuit à partir de 52<span class="euro_sign">€</span></p>
+                                <h4 class="h_title_card_name">Hôtel du port </h4>
+                                <p class="h_subtitle">Nuit à partir de 52<span class="euro_sign">€</span><br/>                           
                                 <span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span>
+                                </p>
                             </div>
                         </a>
                     </div>
 
                     <div class="h_card" >
-                        <a href="#" class="afficher_plus">
+                        <a href="#" class="h_afficher_plus">
                             <img class="h_img" src="images/hebergements/4_small/h_les_mouettes.jpg" alt="h_les_mouettes"/>
                             <div class="h_card_name">
-                                <h4>Hôtel Les Mouettes</h4>
-                                <p>Nuit à partir de 76<span class="euro_sign"> €</span></p>
-                                <span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="far fa-star"></span>
+                                <h4 class="h_title_card_name">Hôtel Les Mouettes</h4>
+                                <p class="h_subtitle">Nuit à partir de 76<span class="euro_sign"> €</span><br/>
+                                <span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star" style="color:#f2f2f2"></span>
+                                </p>
                             </div>
                         </a>
                     </div>
 
                     <div class="h_card" >
-                        <a href="#" class="afficher_plus">
+                        <a href="#" class="h_afficher_plus">
                             <img class="h_img" src="images/hebergements/4_small/h_hotel_de_la_mer.jpg" alt="h_hotel_de_la_mer"/>
                             <div class="h_card_name">
-                                 <h4>Hôtel de la mer </h4>
-                                 <p class="subtitle">Nuit à partir de 46<span class="euro_sign">€</span></p>
-                                <span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="far fa-star"></span><span class="far fa-star"></span>
+                                 <h4 class="h_title_card_name">Hôtel de la mer </h4>
+                                 <p class="h_subtitle">Nuit à partir de 46<span class="euro_sign">€</span><br/>                                 
+                                <span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star" style="color:#f2f2f2"></span><span class="fas fa-star" style="color:#f2f2f2"></span>
+                                </p>
                             </div>
+
                         </a>
                     </div>
 
                     <div class="h_card" >
-                        <a href="#" class="afficher_plus">
+                        <a href="#" class="h_afficher_plus">
                             <img class="h_img" src="images/hebergements/4_small/h_le_panier.jpg" alt="h_le_panier"/>
                             <div class="h_card_name">
-                                <h4>Auberge Le Panier</h4>
-                                <p>Nuit à partir de 23<span class="euro_sign">€</span> </p>
-                                <span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="far fa-star"></span>
+                                <h4 class="h_title_card_name">Auberge Le Panier</h4>
+                                <p class="h_subtitle">Nuit à partir de 23<span class="euro_sign">€</span> <br/>                                
+                                <span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star" style="color:#f2f2f2"></span>
+                                </p>
                             </div>
+
                         </a>
                     </div>
 
                     <div class="h_card" >
-                        <a href="#" class="afficher_plus">
+                        <a href="#" class="h_afficher_plus">
                             <img class="h_img" src="images/hebergements/4_small/h_chez_amina.jpg" alt="h_chez_amina"/>
                             <div class="h_card_name">
-                                <h3>Hôtel chez Amina</h3>
-                                <p>Nuit à partir de 96<span class="euro_sign">€</span></p>
+                                <h4 class="h_title_card_name">Hôtel chez Amina</h4>
+                                <p class="h_subtitle">Nuit à partir de 96<span class="euro_sign">€</span><br/>
                                 <span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span>
+                                </p>
                             </div>
                         </a>
                     </div>
                     
                 </div>
-                <h4><a href="#" class="afficher_plus">Afficher plus</a></h4>
+                <h3><a href="#" class="h_plus">Afficher plus</a></h3>
             </article>
 
             <aside class="heb_populaire">
-                <h2>Les plus populaires <span class="fas fa-chart-line"></span></h2> 
+                <h2 class="h_title">Les plus populaires <span class="fas fa-chart-line"></span></h2> 
                 <div class="hp_all_card">
 
                     <div class="hp_card" >
-                        <a href="#" class="afficher_plus">
+                        <a href="#" class="hp_afficher_plus">
                             <img class="hp_img" src="images/hebergements/4_small/hp_soleil_du_matin.jpg" alt="hp_soleil_du_matin"/>
                             <div class="hp_card_name">
-                                 <h4>Hôtel Le soleil du matin </h4>
-                                 <p>Nuit à partir de 128<span class="euro_sign">€</span></p>
-                                 <span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span>
+                                    <h4 class="title_card_name">Hôtel Le soleil du matin</h4>
+                                    < class="hp_subtitle">Nuit à partir de 128<span class="euro_sign">€</span><br/>                              
+                                    <span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span>
+                                    </p>
                             </div>
                         </a>
                     </div>
 
                     <div class="hp_card" >
-                        <a href="#" class="afficher_plus">
+                        <a href="#" class="hp_afficher_plus">
                             <img class="hp_img" src="images/hebergements/4_small/hp_chambres_hotes.jpg" alt="hp_chambres_hotes"/>
                             <div class="hp_card_name">
-                                <h4>Au coeur de l'eau Chambres d'hôtes</h4>
-                                <p>Nuit à partir de 71<span class="euro_sign">€</span></p>
-                                <span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="far fa-star"></span>
+                                    <h4 class="title_card_name">Au coeur de l'eau Chambres d'hôtes</h4>
+                                    <p class="hp_subtitle">Nuit à partir de 71<span class="euro_sign">€</span>
+                                    <div><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star" style="color:#f2f2f2"></span></div>
+                                    </p>
                             </div>
                         </a>
                     </div>
 
                     <div class="hp_card" >
-                        <a href="#" class="afficher_plus">
+                        <a href="#" class="hp_afficher_plus">
                             <img class="hp_img" src="images/hebergements/4_small/hp_tout_bleu_tout_blanc.jpg" alt="hp_tout_bleu_tout_blanc"/>
                             <div class="hp_card_name">
-                                <h4>Hôtel Tout bleu et blanc</h4>
-                                <p>Nuit à partir de 68<span class="euro_sign">€</span></p>
-                                <span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="far fa-star"></span>
+                                    <h4 class="title_card_name">Hôtel Tout bleu et blanc</h4>
+                                    <p class="hp_subtitle">Nuit à partir de 68<span class="euro_sign">€</span><br/>                               
+                                    <span class="fas fa-star" ></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star" style="color:#f2f2f2"></span>
+                                    </p>
                             </div>
                         </a>
                     </div>
